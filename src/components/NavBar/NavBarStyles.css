@@ -1,0 +1,74 @@
+/* Podstawowe style dla nawigacji */
+.navbar {
+    background: linear-gradient(to right ,black, rgb(50, 0, 63));
+    border-bottom: 2px solid white;
+    box-shadow: 0px -4px 10px 10px white;
+    transition: background-color 0.3s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    text-wrap: nowrap;
+    z-index: 1000;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.navbar-brand {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    display: block;
+}
+
+.navbar-brand h1 {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 700;
+    text-decoration: underline;
+    margin-left: 30px;
+}
+
+/* Style dla linków w navbarze */
+.navbar-nav .navbar-link {
+    color: white;
+    margin-right: 30px;
+    border-bottom: 2px solid rgb(130, 0, 206);
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.6s ease-in-out;
+    text-wrap: nowrap;
+}
+
+.navbar-nav .navbar-link:hover,
+.navbar-nav .active {
+    color: #f0f0f0;
+}
+
+/* Dodatkowe style dla aktywnego linku */
+.navbar-nav .active {
+    transition: 1s all;
+    border-bottom: 2px solid #f0f0f0; /* Linia pod aktywnym linkiem */
+    background-color: rgba(162, 0, 255, 0.5);
+    font-weight: bold;
+    color: #f0f0f0;
+}
+
+/* Dodatkowe style dla kontenera navbaru */
+.navbar-collapse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Reakcje na przewijanie strony */
+.scrolled .navbar-nav .navbar-link {
+    color: white;
+}
